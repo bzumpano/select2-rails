@@ -1933,7 +1933,7 @@ S2.define('select2/selection/allowClear',[
       return;
     }
 
-    var removeAll = this.options.get('translations').get('removeAllItems');   
+    var removeAll = this.options.get('translations').get('removeAllItems');
 
     var $remove = $(
       '<span class="select2-selection__clear" title="' + removeAll() +'">' +
@@ -4410,7 +4410,7 @@ S2.define('select2/dropdown/attachBody',[
 
     $watchers.on(scrollEvent, function (ev) {
       var position = Utils.GetData(this, 'select2-scroll-position');
-      $(this).scrollTop(position.y);
+      $(self).scrollTop(position.y);
     });
 
     $(window).on(scrollEvent + ' ' + resizeEvent + ' ' + orientationEvent,
