@@ -4410,6 +4410,7 @@ S2.define('select2/dropdown/attachBody',[
 
     $watchers.on(scrollEvent, function (ev) {
       var position = Utils.GetData(this, 'select2-scroll-position');
+      // @see https://github.com/select2/select2/issues/4236#issuecomment-193110320
       $(self).scrollTop(position.y);
     });
 
